@@ -8,4 +8,8 @@
         @apply bg-gray-50 rounded-md text-sm text-gray-800 w-32 h-10 transition-shadow mt-6;
     }
 
+
+    .link {
+        @apply hover:underline cursor-pointer
+    }
 }
