@@ -22,9 +22,9 @@ export default function SearchBox() {
 
     return (
         <form className='flex w-full border shadow-lg border-gray-200 rounded-full h-12 items-center px-4 ml-4 flex-grow max-w-3xl' onSubmit={handleSubmit}>
-            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} onSubmit={handleSubmit} className='outline-none w-full' />
-            <RxCross1 className='text-xl cursor-pointer text-gray-400 mr-2' onClick={() => setSearch("")} alt="X" />
-            <BsFillMicFill className='cursor-pointer text-3xl pl-2 border-l-2 mr-2 border-gray-300' alt="Mic" />
+            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} onSubmit={handleSubmit} className='outline-none w-full text-gray-700' />
+            <RxCross1 className='text-xl cursor-pointer text-gray-400 mr-2 hidden sm:flex' onClick={() => setSearch("")} alt="X" />
+            <BsFillMicFill className='cursor-pointer text-3xl pl-2 border-l-2 mr-2 border-gray-300 hidden sm:flex' alt="Mic" />
             <AiOutlineSearch className='cursor-pointer text-2xl' alt="Mag" onClick={handleSubmit} />
         </form>
     )

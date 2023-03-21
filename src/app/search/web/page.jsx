@@ -1,8 +1,10 @@
 import React from 'react'
 
+
 export default function WebSearchPage() {
+
     return (
-        < div > WebSearchPage
-        </ div>
+        < div className='pl-4 sm:pl-36'> WebSearchPage
+        </ div >
     )
 }
