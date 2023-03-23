@@ -1,3 +1,4 @@
+import WebSearchResults from '@/components/WebSearchResults';
 import Link from 'next/link';
 import React from 'react'
 
@@ -18,8 +19,11 @@ export default async function WebSearchPage({ searchParams }) {
         </div>
     }
 
-    return (<>
-        {result && result.map(result => <h1>{result.title}</h1>)}
-    </>
+
+
+    return (
+        <>
+            {result && <WebSearchResults results={data} />}
+        </>
     );
 };

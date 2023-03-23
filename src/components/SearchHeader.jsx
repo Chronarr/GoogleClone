@@ -13,7 +13,7 @@ export default function SearchHeader() {
             <div className='flex w-full p-6 items-center justify-between'>
 
                 <Link href={"/"}>
-                    <Image src={"/googlelogo_color_160x56dp.png"} width="92" height="30"></Image>
+                    <Image className='min-w-[92px]' src={"/googlelogo_color_160x56dp.png"} width="92" height="30"></Image>
                 </Link>
 
                 <div className='flex-1 justify-center items-center'>
