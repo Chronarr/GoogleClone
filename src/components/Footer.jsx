@@ -5,7 +5,6 @@ import CountryLookup from './CountryLookup'
 
 export default function Footer() {
     const pathname = usePathname();
-    console.log(pathname)
     function path() {
         if (pathname === "/") {
             return "bottom-0";
