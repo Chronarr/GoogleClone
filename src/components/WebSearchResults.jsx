@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import PageButtons from './PageButtons'
 
 export default function WebSearchResults({ results }) {
 
     return (
-        <div className=' px-4 sm:pl-36 sm:pr-48 w-full min-w-[600px] pb-10 flex flex-col'>
+        <div className=' px-4 sm:pl-36 sm:pr-48 w-full min-w-[600px] pb-40 sm:pb-24 flex flex-col'>
+            
             <p className='text-sm text-gray-400 mt-1 mb-5'>About {results.searchInformation?.formattedTotalResults} search results ({results.searchInformation?.formattedSearchTime} seconds) </p>
             {results.items?.map((result) => (
 
@@ -26,6 +28,9 @@ export default function WebSearchResults({ results }) {
                     <p>{result.snippet}</p>
                 </div>
             ))}
+            <div className='flex w-full items-center justify-center'>
+                <PageButtons total={results.searchInformation.totalResults}/>
+            </div>
         </div>
     )
 }

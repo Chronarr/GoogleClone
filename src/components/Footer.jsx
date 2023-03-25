@@ -1,20 +1,11 @@
-"use client"
-import { usePathname } from 'next/navigation'
+
 import React from 'react'
 import CountryLookup from './CountryLookup'
 
 export default function Footer() {
-    const pathname = usePathname();
-    function path() {
-        if (pathname === "/") {
-            return "bottom-0";
-        }
-        else {
-            return "-bottom-89px";
-        }
-    }
+
     return (
-        <footer className={`absolute ${path()} text-sm text-gray-500 bg-gray-100 w-full`}>
+        <footer className={`absolute bottom-0 text-sm text-gray-500 bg-gray-100 w-full`}>
             <div className=' border-b px-8 py-3 '>
                 <CountryLookup />
             </div>
