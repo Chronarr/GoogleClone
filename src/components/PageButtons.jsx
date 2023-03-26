@@ -25,7 +25,7 @@ export default function PageButtons(total) {
       );
       else {
       buttons.push(
-        <Link key="1" href={`${pathname}?search=${searchTerm}&start=${i*10+1}`}>
+        <Link href={`${pathname}?search=${searchTerm}&start=${i*10+1}`}>
           <div className='flex flex-col px-0.5 text-blue-600  items-center group' key={i}>
             <HiOutlineMinusCircle className='h-5'/>
             <p className='group-hover:underline text-sm'>{i+1}</p>
@@ -39,7 +39,7 @@ export default function PageButtons(total) {
   return (
     <div className='flex pt-6 justify-between '>
       {startIndex >= 10 && (
-        <Link key="2" href={`${pathname}?search=${searchTerm}&start=${startIndex - 10}`}>
+        <Link href={`${pathname}?search=${searchTerm}&start=${startIndex - 10}`}>
           <div className='flex flex-col px-1 text-blue-600  items-end group'>
             <HiOutlineArrowCircleLeft className='h-5'/>
             <p className='group-hover:underline text-sm'>Previous</p>
@@ -58,7 +58,7 @@ export default function PageButtons(total) {
         { pageButtons()
         }
       {startIndex <= 90 && (
-        <Link key="3" href={`${pathname}?search=${searchTerm}&start=${startIndex + 10}`}>
+        <Link href={`${pathname}?search=${searchTerm}&start=${startIndex + 10}`}>
           <div className='flex flex-col px-1 text-blue-600  items-start group'>
             <HiOutlineArrowCircleRight className='h-5'/>
             <p className='group-hover:underline text-sm'>Next</p>

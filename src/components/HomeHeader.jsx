@@ -4,7 +4,7 @@ import { CgMenuGridO } from "react-icons/cg"
 
 export default function HomeHeader() {
     return (
-        <header className='flex justify-end p-5 text-sm'>
+        <header data-nextjs-scroll-focus-boundary className='flex justify-end p-5 text-sm'>
             <div className='flex space-x-4 items-center'>
                 <Link className='hover:underline' href="/">Gmail</Link>
                 <Link className='hover:underline' href="/">Images</Link>
