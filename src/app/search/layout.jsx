@@ -7,6 +7,7 @@ export const metadata = {
 }
 
 export default function SearchLayout({ children }) {
+
     return (
         <div className=''>
             <SearchHeader />
@@ -15,3 +16,4 @@ export default function SearchLayout({ children }) {
         </div>
     )
 }
+

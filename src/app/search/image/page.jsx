@@ -24,4 +24,5 @@ export default async function ImageSearchPage({ searchParams }) {
             {result && <ImageSearchResults results={data} />}
         </>
     );
+    
 };
