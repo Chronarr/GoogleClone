@@ -34,7 +34,7 @@ export default function HomeSearch() {
 
             <div>
                 <button onClick={handleSubmit} className='btn hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300'>Google search</button>
-                <button disabled={randomSearchLoading} onClick={(!input.trim()) ? randomSearch : handleSubmit} className='btn disabled:opacity-80 hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300 ml-5'>{randomSearchLoading ? (<img src='/Eclipse-1s-194px.svg' alt='Loading...' className='h-6 text-center mx-auto' />) : ("I am feeling lucky")}</button>
+                <button disabled={randomSearchLoading} onClick={(!input.trim()) ? randomSearch : handleSubmit} className='btn disabled:opacity-80 hover:ring-1 hover:ring-gray-200 focus:outline-none active:ring-gray-300 ml-5'>{randomSearchLoading ? (<img src='/Eclipse-1s-194px.svg' alt='Loading...' className='h-3 text-center mx-auto' />) : ("I am feeling lucky")}</button>
             </div>
         </>
     )
